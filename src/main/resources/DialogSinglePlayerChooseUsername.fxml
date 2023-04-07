@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #6666FF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="-1.0" layoutY="1.0" prefHeight="500.0" prefWidth="800.0">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="238.0" prefWidth="358.0">
+               <children>
+                  <ImageView fitHeight="178.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PlayerTwoIcon.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="63.0" prefWidth="358.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="383.0" text="Choose Username:" textFill="WHITE">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="358.0">
+               <children>
+                  <ComboBox fx:id="ComboBox_UserNames" editable="true" onAction="#StartGame_ButtonPressed" prefHeight="27.0" prefWidth="181.0" promptText="Insert Username here..." visibleRowCount="5" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="StartGameButton" mnemonicParsing="false" onAction="#StartGame_ButtonPressed" text="start game" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

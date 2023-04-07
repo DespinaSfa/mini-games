@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #6666FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="-6.0" layoutY="-10.0" prefHeight="492.0" prefWidth="800.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="GoBack_Button" mnemonicParsing="false" onAction="#GoBack_ButtonPressed" text="Go Back to the start" />
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="138.0" prefWidth="800.0" spacing="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PlayerOneIcon.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PlayerTwoIcon.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="63.0" prefWidth="786.0" spacing="225.0">
+               <children>
+                  <Label text="Username Player1" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font></Label>
+                  <Label text="Username Player2" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox alignment="BASELINE_CENTER" prefHeight="44.0" prefWidth="800.0" spacing="210.0">
+               <children>
+                  <ComboBox fx:id="ComboBox_UserNamesPlayer1" editable="true" prefHeight="27.0" prefWidth="200.0" promptText="Insert Username here..." visibleRowCount="5" />
+                  <ComboBox fx:id="ComboBox_UserNamesPlayer2" editable="true" onAction="#ChooseWord_ButtonPressed" prefHeight="27.0" prefWidth="200.0" promptText="Insert Username here..." visibleRowCount="5" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="85.0" prefWidth="800.0">
+               <children>
+                  <Button fx:id="ChooseWordButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ChooseWord_ButtonPressed" prefHeight="45.0" prefWidth="110.0" text="Choose Word" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

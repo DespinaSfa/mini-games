@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #6666FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="269.0" layoutY="31.0" text="Hangman" textFill="WHITE">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Label fx:id="GameResultInformation" alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="285.0" prefHeight="79.0" prefWidth="791.0" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="PlayAgainButton" layoutX="227.0" layoutY="396.0" mnemonicParsing="false" onAction="#PlayAgain_ButtonPressed" text="Play again">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="GoBackButton" layoutX="426.0" layoutY="396.0" mnemonicParsing="false" onAction="#GoBack_ButtonPressed" text="Go Back to the Start">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@TrophyIcon.jpg" />
+         </image></ImageView>
+      <Label fx:id="MisteryWords" layoutX="558.0" layoutY="126.0" prefHeight="82.0" prefWidth="226.0" textFill="WHITE" />
+   </children>
+</AnchorPane>

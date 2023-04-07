@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+      prefWidth="800.0" style="-fx-background-color: #6666FF;" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="177.0" fitWidth="217.0" layoutX="293.0" layoutY="116.0" pickOnBounds="true"
+                 preserveRatio="true">
+         <image>
+            <Image url="@TrophyIcon.jpg" />
+         </image></ImageView>
+      <Label layoutX="325.0" layoutY="44.0" prefHeight="44.0" prefWidth="150.0" text="Hangman" textAlignment="CENTER"
+             textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelWinnerInformation" alignment="CENTER" layoutX="9.0" layoutY="328.0" prefHeight="57.0"
+             prefWidth="783.0" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="PlayAgainButton" layoutX="196.0" layoutY="416.0" mnemonicParsing="false"
+              onAction="#PlayAgain_ButtonPressed" prefHeight="36.0" prefWidth="163.0" text="Play again">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="GoBackButton" layoutX="455.0" layoutY="417.0" mnemonicParsing="false"
+              onAction="#GoBack_ButtonPressed" prefHeight="38.0" prefWidth="212.0" text="Go Back to the Start">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Label fx:id="MisteryWords" layoutX="548.0" layoutY="116.0" prefHeight="82.0" prefWidth="226.0" textFill="WHITE" />
+   </children>
+</Pane>

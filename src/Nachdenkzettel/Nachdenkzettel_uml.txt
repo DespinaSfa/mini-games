@@ -1,0 +1,54 @@
+﻿UML Microklausur
+
+Bianca Knülle, 43373/ Despoina Sfantou, 43368/ Julia Fellmeth, 43391/ Kethella Oliveira, 43385….....................................................................................................
+Vorname, Name, Matrikelnummer
+
+
+1. Erstellen Sie ein Use Case Diagramm für ein Auto
+
+2. Eine Bank hat viele Kunden. Malen Sie das Klassendiagramm für diese Beziehung.
+Wie kann man diese Beziehung in der Implementation in Java darstellen?
+
+3. Wie kommen Sie vom Use Case Diagramm zum Klassendiagramm?
+-Collect more information about the several steps 
+-Structure into categories
+-Connect elements to more abstract categories and specify with further descriptions 
+ 
+
+
+
+
+4. Was ist der Unterschied zwischen Aggregation und Komposition? Was bedeutet der Unterschied in einer Datenbank?
+
+-Aggregation is a connection that describes the relation between certain objects 
+	e.g. classroom and students (the objects are related to each other but are not dependent 
+	from one another)
+-Composition is a part of aggregation that describes the ownership 
+	e.g. destruction of school —> destruction of classroom  
+
+ -The composition can exist without an aggregate object. If the aggregate object is deleted, that does not mean that the composition object is deleted as well.
+
+5. Definieren Sie eine Klasse Game mit ihren Attributen
+
+Game
+————————————
+-name
+-version
+-FSK
+-date_of_being_published 
+-identify_code
+————————————
+-getName()
+-addName()
+-getVersion()
+-getFSK()
+-getDate()
+-getCode()
+-removeCode()
+
+6. Was bedeutet es, wenn eine Klasse in UML ein „public“ Attribut hat?
+
+-Public means that all classes have access to the specific feature. Access to this feature can only be available if at least one other object is accessible as well.
+                                     
+
+8. Hausaufgabe für jedes Team:  in der Übung Use Case und Klassendiagramm für Ihr Projekt erstellen! Wir schauen uns die ersten Schritte morgen an im Review.

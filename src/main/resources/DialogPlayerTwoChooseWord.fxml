@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #6666FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="201.0" fitWidth="230.0" layoutX="291.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PlayerTwoIcon.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="TextField_chooseWord" layoutX="326.0" layoutY="354.0" promptText="Insert word here..." />
+      <Label fx:id="LabelPlayer2ChooseWord" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="248.0" prefHeight="98.0" prefWidth="780.0" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="31.0" />
+         </font></Label>
+      <Button fx:id="PlayerTwoChooseWordButton" layoutX="369.0" layoutY="402.0" mnemonicParsing="false" onAction="#PlayerTwoChooseWord_ButtonPressed" text="StartGame" />
+      <Button fx:id="GoBack_Button" layoutX="43.0" layoutY="37.0" mnemonicParsing="false" onAction="#GoBack_ButtonPressed" text="Go Back to the start" />
+   </children>
+</Pane>

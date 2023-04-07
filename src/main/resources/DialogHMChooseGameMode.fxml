@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #6666FF;"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="137.0" layoutY="56.0" text="Choose Game Mode:" textFill="WHITE">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <Button fx:id="EasyModeButton" layoutX="315.0" layoutY="178.0" mnemonicParsing="false" onAction="#EasyMode_ButtonPressed" prefWidth="170.0" text="EASY">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="MediumModeButton" layoutX="315.0" layoutY="268.0" mnemonicParsing="false" onAction="#MediumMode_ButtonPressed" prefWidth="170.0" text="MEDIUM">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="HardModeButton" layoutX="315.0" layoutY="365.0" mnemonicParsing="false" onAction="#HardMode_ButtonPressed" prefWidth="170.0" text="HARD">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

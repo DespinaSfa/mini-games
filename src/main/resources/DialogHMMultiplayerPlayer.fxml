@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #6666FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="10.0" prefHeight="486.0" prefWidth="799.0">
+         <children>
+            <Label layoutX="326.0" layoutY="26.0" text="Hangman" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="LabelFieldInformation_PlayerName" alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="70.0" prefHeight="24.0" prefWidth="570.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="ImageView_SMLevel1" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Schneemann_Level1.jpg" />
+               </image></ImageView>
+            <ImageView fx:id="ImageView_SMLevel2" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Schneemann_Level2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageView_SMLevel3" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Schneemann_Level3.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageView_SMLevel4" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Schneemann_Level4.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageView_SMLevel5" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Schneemann_Level5.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageView_SMLevel6" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Schneemann_Level6.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageView_SMLevel7" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Schneemann_Level7.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageView_SMLevel8" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Schneemann_Level8.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageView_SMLevel9" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Schneemann_Level9.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageView_SMLevel10" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Schneemann_Level10.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="TextField_MWCharacter" alignment="CENTER" layoutX="494.0" layoutY="347.0" prefHeight="42.0" prefWidth="78.0" promptText="here...">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label fx:id="misteryWordPlayer1" alignment="CENTER" layoutX="17.0" layoutY="277.0" prefHeight="56.0" prefWidth="772.0" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Label>
+            <Label layoutX="235.0" layoutY="350.0" text="Insert the letter here:" textFill="#fcf9f9">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="Button_ValidateMWCharacter" layoutX="317.0" layoutY="410.0" mnemonicParsing="false" onAction="#ValidateMWCharacter_ButtonPressed" prefHeight="36.0" prefWidth="163.0" text="Validate Letter">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Label fx:id="LevelCounter" alignment="CENTER" layoutX="541.0" layoutY="113.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="GoBack_Button" layoutX="53.0" layoutY="47.0" mnemonicParsing="false" onAction="#GoBack_ButtonPressed" text="Go Back to the start" />
+   </children>
+</Pane>
